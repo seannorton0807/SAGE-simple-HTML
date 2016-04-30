@@ -3,103 +3,134 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SAGE</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href='https://fonts.googleapis.com/css?family=Teko:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 </head>
 <body>
-	<header>
-		<img src="img/logo.svg" alt="SAGE">
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Get in Touch</a></li>
-			</ul>
-		</nav>
+	<header class="topnav clearfix">
+		<div class="container">
+			<img src="img/logo.svg" alt="SAGE">
+			<nav>
+				<ul>
+					<li><a class="active"href="#">Home</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Get in Touch</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!--HOW DO I DO THE BOTTOM LINE THINGIE?-->
 	</header>
 	<main>
-		<section>
+		<section class="hero">
 			<ul>
 				<li>
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-					<a href="">Explore More</a>
+					<a href="#" class="explore">Explore More</a>
 				</li>
 				<li>
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-					<a href="">Explore More</a>
+					<a href="#" class="explore">Explore More</a>
 				</li>
 				<li>
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-					<a href="">Explore More</a>
+					<a href="#" class="explore">Explore More</a>
 				</li>
 				<li>
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-					<a href="">Explore More</a>
+					<a href="#" class="explore">Explore More</a>
 				</li>
 			</ul>
 			<nav>
 				<ul>
-					<li><a href="#" class="active"></a></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><div></div></li>
+					<li><div class="active"></div></li>
+					<li><div></div></li>
+					<li><div></div></li>
 				</ul>
 			</nav>
 		</section>
-		<section>
+		<section class="projects">
 			<h1>My Projects</h1>
-			<article>
-				<figure>
-						<img src="img/article1.jpg" alt="Model 5 Catalog">
-						<h2>Model 5 Catalog</h2>
-						<figcaption>Information materials that will help to discover all features of the serial electric car Tesla Model S</figcaption>
-				</figure>
-			</article>
-			<article>
-				<figure>
-					<img src="img/article2.jpg" alt="Discovery Channel iPad">
-					<h2>Discovery Channel iPad</h2>
-					<figcaption>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</figcaption>
-				</figure>
-			</article>
-			<article>
-				<figure>
-					<img src="img/article3.jpg" alt="STUHRLING">
-					<h2>STUHRLING</h2>
-					<figcaption>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</figcaption>
-				</figure>
-			</article>
-			<article>
-				<figure>
-					<img src="img/article4.jpg" alt="Infinity Spaces">
-					<h2>Infinity Spaces</h2>
-					<figcaption>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields</figcaption>
-				</figure>
-			</article>
-			<a href="#">Show more Projects</a>
+			<div>
+				<article>
+					<figure>
+						<a href="">
+							<img src="img/article1.jpg" alt="Model 5 Catalog">
+							<figcaption>
+							<!--
+								<h4>
+									<time datetime="2014">Year 2014</time>
+									Client: Personal Project
+								</h4>
+								<p>Digital / Mobile / Editorial</p> 
+							-->
+							<h2>Model 5 Catalog</h2>
+							<p>Information materials that will help to discover all features of the serial electric car Tesla Model S</p>
+							</figcaption>
+						</a>
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="img/article2.jpg" alt="Discovery Channel iPad">
+						<h2>Discovery Channel iPad</h2>
+						<figcaption>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</figcaption>
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="img/article3.jpg" alt="STUHRLING">
+						<h2>STUHRLING</h2>
+						<figcaption>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</figcaption>
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="img/article4.jpg" alt="Infinity Spaces">
+						<h2>Infinity Spaces</h2>
+						<figcaption>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields</figcaption>
+					</figure>
+				</article>
+			</div>
+			<footer>
+				<a href="#">Show more Projects</a>
+				<div></div>
+			</footer>
 		</section>
-		<section>
+		<section class="showcasing">
 			<h1>Showcasing your work has never been more fun</h1>
 			<p>Discover elegant solution for your online portfolio. Fast, reliable, affordable...</p>
 			<a href="#">Get in Touch</a>
 		</section>
-		<footer>
-			<h1>Stay Connected</h1>
+		<aside class="stayconnected">
+			<div>
+			<h1>Stay Connected</h1>	
 			<p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
 			<ul>
-				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i> Behance</a></li>
-				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
-				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+			<!--Is there a way to separate the lines without br?-->
+				<li><a href="#" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i><br>Behance</a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><br>Facebook</a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i><br>Pinterest</a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><br>Linkedin</a></li>
 			</ul>
-			<p>Copyright © 2015 SAGE Agency Worldwide. All rights reserved.</p>
-		</footer>
+			</div>
+		</aside>
 	</main>
+	<footer class="bottomdisclaimers">
+		<div>
+			<small>Copyright &copy; 2015 SAGE Agency Worldwide. All rights reserved.</small>
+		</div>
+	</footer>
 </body>
 </html>
