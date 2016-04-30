@@ -13,10 +13,12 @@
 <body>
 	<header class="topnav clearfix">
 		<div class="container">
-			<img src="img/logo.svg" alt="SAGE">
+			<a href="#">
+				<img src="img/logo.svg" alt="SAGE">
+			</a>
 			<nav>
 				<ul>
-					<li><a class="active"href="#">Home</a></li>
+					<li><a class="active"href="#">Home</a><div class="toplinkunderline"></div></li>
 					<li><a href="#">Projects</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Services</a></li>
@@ -25,7 +27,8 @@
 				</ul>
 			</nav>
 		</div>
-		<!--HOW DO I DO THE BOTTOM LINE THINGIE?-->
+		<!--HOW DO I DO THE BOTTOM LINE THINGIE?
+		I kinda did it but meh.-->
 	</header>
 	<main>
 		<section class="hero">
@@ -64,42 +67,76 @@
 			<h1>My Projects</h1>
 			<div>
 				<article>
-					<figure>
-						<a href="">
-							<img src="img/article1.jpg" alt="Model 5 Catalog">
-							<figcaption>
-							<!--
-								<h4>
-									<time datetime="2014">Year 2014</time>
-									Client: Personal Project
-								</h4>
-								<p>Digital / Mobile / Editorial</p> 
-							-->
-							<h2>Model 5 Catalog</h2>
-							<p>Information materials that will help to discover all features of the serial electric car Tesla Model S</p>
-							</figcaption>
+					<div class="articlehide">
+						<a href="#">
+						<div class="articlehov">
+							<h4><time datetime="2014">Year 2014</time></h4>
+							<h4>Client: Personal Project</h4>
+							<p>Digital / Mobile / Editorial</p> 
+						</div>
 						</a>
+					</div>
+					<figure>
+					<a href="#">
+						<img src="img/article1.jpg" alt="Model 5 Catalog">
+						<h2>Model 5 Catalog</h2>
+						<figcaption>Information materials that will help to discover all features of the serial electric car Tesla Model S</figcaption>
+					</a>
 					</figure>
+				</a>
 				</article>
 				<article>
+					<div class="articlehide">
+						<a href="#">
+						<div class="articlehov">
+							<h4><time datetime="2014">Year 2014</time></h4>
+							<h4>Client: Personal Project</h4>
+							<p>Digital / Mobile / Editorial</p> 
+						</div>
+						</a>
+					</div>
 					<figure>
+					<a href="#">
 						<img src="img/article2.jpg" alt="Discovery Channel iPad">
 						<h2>Discovery Channel iPad</h2>
 						<figcaption>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</figcaption>
+					</a>
 					</figure>
 				</article>
 				<article>
+					<div class="articlehide">
+						<a href="#">
+						<div class="articlehov">
+							<h4><time datetime="2014">Year 2014</time></h4>
+							<h4>Client: Personal Project</h4>
+							<p>Digital / Mobile / Editorial</p> 
+						</div>
+						</a>
+					</div>
 					<figure>
+					<a href="#">
 						<img src="img/article3.jpg" alt="STUHRLING">
 						<h2>STUHRLING</h2>
 						<figcaption>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</figcaption>
+					</a>
 					</figure>
 				</article>
 				<article>
+					<div class="articlehide">
+						<a href="#">
+						<div class="articlehov">
+							<h4><time datetime="2014">Year 2014</time></h4>
+							<h4>Client: Personal Project</h4>
+							<p>Digital / Mobile / Editorial</p> 
+						</div>
+						</a>
+					</div>
 					<figure>
+					<a href="#">
 						<img src="img/article4.jpg" alt="Infinity Spaces">
 						<h2>Infinity Spaces</h2>
 						<figcaption>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields</figcaption>
+					</a>
 					</figure>
 				</article>
 			</div>
@@ -114,15 +151,15 @@
 			<a href="#">Get in Touch</a>
 		</section>
 		<aside class="stayconnected">
-			<div>
+			<div class="clearfix">
 			<h1>Stay Connected</h1>	
 			<p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
 			<ul>
 			<!--Is there a way to separate the lines without br?-->
-				<li><a href="#" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i><br>Behance</a></li>
-				<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><br>Facebook</a></li>
-				<li><a href="#" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i><br>Pinterest</a></li>
-				<li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><br>Linkedin</a></li>
+				<a href="#" target="_blank"><li><i class="fa fa-behance" aria-hidden="true"></i><br>Behance</li></a>
+				<a href="#" target="_blank"><li><i class="fa fa-facebook" aria-hidden="true"></i><br>Facebook</li></a>
+				<a href="#" target="_blank"><li><i class="fa fa-pinterest" aria-hidden="true"></i><br>Pinterest</li></a>
+				<a href="#" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i><br>Linkedin</li></a>
 			</ul>
 			</div>
 		</aside>

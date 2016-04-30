@@ -50,6 +50,11 @@ h1 {
 
 header.topnav {
 	background-color: white;
+	overflow: hidden;
+}
+
+header.topnav>div {
+	height: 70px;
 }
 
 .topnav a {
@@ -74,6 +79,13 @@ header.topnav {
 
 a.active {
 	color: #f63c3c;
+}
+
+.toplinkunderline {
+	margin-top: 22px;
+	background-color: #f63c3c;
+	height: 4px;
+	width: 40px;
 }
 
 /*HERO IMAGE*/
@@ -104,6 +116,9 @@ section.hero {
 	width: 720px;
 	color: white;
 	margin: 0 auto 40px;
+	font-size: 22px;
+	color: rgba(255,255,255,.7);
+	line-height: 26.4px;
 }
 
 .hero a.explore {
@@ -137,7 +152,7 @@ section.hero {
 	display: block;
 	height: 4px;
 	width: 40px;
-	background-color: rgba(0,0,0,.22);
+	background-color: rgba(255,255,255,.22);
 }
 
 .hero nav li {
@@ -167,13 +182,20 @@ section.hero {
 	margin-bottom: 50px;
 }
 
-.projects h2 {
+.projects article figure h2 {
 	font-family: Teko, sans-serif;
 	font-size: 30px;
 	letter-spacing: .12em;
 	color: black;
 	margin-top: 25px;
 	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.projects article figure p {
+	font-family: "Titillium Web";
+	color: #555555;
+	font-size: 14px;
 }
 
 .projects div {
@@ -183,12 +205,63 @@ section.hero {
 .projects article {
 	margin: 0 10px 30px;
 	display: inline-block;
+	position: relative;
 }
 
 .projects figcaption {
 	margin: 0 auto;
 	font-size: 14px;
 	width: 510px;
+}
+
+.articlehide {
+	background-color: #352d2f;
+	width: 930px;
+	height: 500px;
+	padding-top: 20px;
+	position: absolute;
+	visibility: hidden;
+}
+
+.projects article:hover > div.articlehide {
+	visibility: visible;
+}
+
+/*
+
+WHY DOES THIS PART NOT WORK?
+
+.projects article img:hover + div.articlehide {
+	visibility: visible;
+}*/
+
+.articlehov {
+	background-color: #f63c3c;
+	width: 890px;
+	height: 460px;
+	text-align: center;
+	padding-top: 190px;
+}
+
+div.articlehov h4 {
+	font-family: Teko, sans-serif;
+	font-size: 24px;
+	letter-spacing: .12em;
+	line-height: 30px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.articlehov p {
+	margin-top: 75px;
+	font-size: 18px;
+	font-family: Teko, sans-serif;
+	letter-spacing: .12em;
+	line-height: 30px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
 }
 
 .projects footer {
@@ -285,9 +358,6 @@ section.hero {
 	background-color: #30282a;
 	text-align: center;
 	padding-top: 60px;
-}
-
-.stayconnected li a {
 	color: white;
 	font-family: Teko;
 	font-size: 30px;
@@ -295,6 +365,12 @@ section.hero {
 	letter-spacing: .12em;
 	text-transform: uppercase;
 	margin-top: 24px;
+	margin-right: 30px;
+	float:left;
+}
+
+.stayconnected a:last-child>li {
+	margin-right: 0px;
 }
 
 .stayconnected li i {
